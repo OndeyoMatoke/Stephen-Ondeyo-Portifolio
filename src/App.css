@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  background-color: antiquewhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.unordered { 
+  margin: 0;  
+  list-style: none;
+  display: flex;  
+  padding: 15px;
+  background-color: black;
+  padding: 0;  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul li {
+  margin: 30px;
+  font-size: 15px;  
+}
+
+li :hover {
+  background-color: aqua;
+  transition: 1s;  
+  border-radius: 3px;
+  padding: 5px;
+}
+
+ul li Link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homeHeading {
+  margin-top: 200px;
+  margin-left: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homePara {  
+  margin-left: 200px;  
+  letter-spacing: 1px;
+}
+.aboutPara {
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 400px;
+}
+
+.skillset {
+  margin-left: 50px;
+}
+
+.skillList {
+  margin-left: 50;
+  color: black;
+  list-style: none;
+}
+
+
+.myForm {
+  margin-left: 100px;
+  margin-top: 50px;
+  
+}
+
+.myForm input {
+  border: none;
+  padding: 10px;
+  width: 20%;
+  background-color: azure;
+
+}
+
+.myForm textarea {
+  padding: 10px;
+  border: none;
+  width: 20%;
+  background-color: azure;
+}
+
+.sabmit {
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  background-color: black;
+}
+.sabmit:hover {
+  cursor: pointer;
 }
