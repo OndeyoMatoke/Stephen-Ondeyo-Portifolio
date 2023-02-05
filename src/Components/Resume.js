@@ -5,7 +5,7 @@ import resume from './images/resume.jpg'
 export default function Resume() {
   return (
     <div>
-      <p></p>
+      <p>resume</p>
     </div>
   )
 }
