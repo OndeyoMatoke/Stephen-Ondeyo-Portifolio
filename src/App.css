@@ -1,36 +1,53 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
 }
 
-.unordered { 
-  margin: 0;  
-  list-style: none;
-  display: flex;  
-  padding: 15px;
+.navBar { 
   background-color: black;
-  padding: 0;  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;     
 }
 
-a {
+.navList ul {
+  display: flex;
+  padding: 0;
+  margin: 0;  
+}
+
+
+.navList li {
+  list-style: none;  
+}
+
+.navList li a {
+  display: block;
   text-decoration: none;
+  padding: 20px; 
+  color: white; 
 }
 
-ul li {
-  margin: 30px;
-  font-size: 15px;  
+.navList li:hover {
+  background-color: rgb(67, 74, 74);;
+  border-radius: 5px;
 }
 
-li :hover {
-  background-color: aqua;
-  transition: 1s;  
-  border-radius: 3px;
-  padding: 5px;
-}
 
-ul li Link {
-  color: white;
-}
+ .menu {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  
+} 
 
 .homeHeading {
   margin-top: 200px;
