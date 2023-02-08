@@ -42,12 +42,43 @@ body {
 
 
  .menu {
-  display: flex;
+  display: none;
   position: absolute;
   right: 10px;
   top: 20px;
   
 } 
+
+
+
+
+@media (max-width: 600px) {
+  .menu {
+     display: flex;
+     cursor: pointer;
+   } 
+ 
+   .navList {
+     display: none;  
+     width: 100%;
+   }
+ 
+   .navBar {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .navList ul {
+     flex-direction: column;
+     width: 100%;
+   }
+ 
+   .navList li a {
+     padding: 5px 1px;
+   }
+  }
+
+
 
 .homeHeading {
   margin-top: 200px;
@@ -105,3 +136,62 @@ body {
 .sabmit:hover {
   cursor: pointer;
 }
+
+
+
+
+/* styling projects starts here */
+.projects {
+  width: 100%;
+  background-color: #3b3131;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 60vh;
+  margin-bottom: 3rem;
+  left: 10px;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.giftcardimage {
+  width: 50%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.todoimage {
+  width: 50%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.bmiimage {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.clockimage {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.fbimage {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.heading5 {
+  color: white;
+  font-size: large;
+}
+
