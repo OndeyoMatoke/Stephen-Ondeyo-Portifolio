@@ -195,3 +195,10 @@ body {
   font-size: large;
 }
 
+
+/* styling resume */
+.myResume {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}

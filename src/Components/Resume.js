@@ -5,7 +5,7 @@ import React from 'react'
 export default function Resume() {
   return (
     <div>
-      <p>resume</p>
+      <img src='/images/stevresume.jpg' alt='resume' className='myResume'/>
     </div>
   )
 }
