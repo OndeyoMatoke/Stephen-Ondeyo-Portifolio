@@ -17,25 +17,25 @@ body {
   justify-content: center;     
 }
 
-.navList ul {
+.navLst {
   display: flex;
   padding: 0;
   margin: 0;  
 }
 
 
-.navList li {
+.navLst li {
   list-style: none;  
 }
 
-.navList li a {
+.navLst li a {
   display: block;
   text-decoration: none;
   padding: 20px; 
   color: white; 
 }
 
-.navList li:hover {
+.navLst li:hover {
   background-color: rgb(67, 74, 74);;
   border-radius: 5px;
 }
@@ -43,40 +43,46 @@ body {
 
  .menu {
   display: none;
-  position: absolute;
-  right: 10px;
-  top: 20px;
   
 } 
 
 
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .menu {
-     display: flex;
+     display: block;
      cursor: pointer;
+     position: absolute;
+     right: 10px;
+     top: 20px;
    } 
  
-   .navList {
-     display: none;  
-     width: 100%;     
+   .navLst {
+     display: none;       
    }
  
-   .navBar {
+   /* .navBar {
      flex-direction: column;
      align-items: flex-start;
      background-color: black;     
+   } */
+ 
+   .navLstMobile {
+     position:absolute;
+     display: block;
+     list-style: none;
+     background-color: blue;
+     left: 0;
+     top: 75px;
+     transition: all 0.5s;
+     width: 100%;    
+     
    }
  
-   .navList ul {
-     flex-direction: column;
-     width: 100%;
-     background-color: black;
-   }
- 
-   .navList li a {
+   .navLst li a {
      padding: 5px 1px;
+     width: 100%;
    }
   }
 
@@ -145,7 +151,7 @@ body {
 /* styling projects starts here */
 .projects {
   width: 100%;
-  background-color: #3b3131;
+  
 }
 
 .project {
@@ -155,6 +161,7 @@ body {
   height: 60vh;
   margin-bottom: 3rem;
   left: 10px;
+  top: 20px;
 }
 
 .project a {
@@ -193,7 +200,7 @@ body {
 
 
 .heading5 {
-  color: white;
+  color: black;
   font-size: large;
 }
 

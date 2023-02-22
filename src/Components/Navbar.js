@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import 'font-awesome/css/font-awesome.min.css' 
 import { FaBars } from 'react-icons/fa'
 
 
 export default function Navbar() {
+
+  const {isMobile, setIsMobile} = useState(false)
+
   return (
-    <>
-      <FaBars className='menu'/>
+    <>      
       <nav className='navBar'>
-        <div className='navList'>
-            <ul>
+
+            <ul className={isMobile? 'navLstMobile': 'navLst'}
+              onClick={()=> setIsMobile(false)}
+            >
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -32,7 +35,10 @@ export default function Navbar() {
                     <Link to="/resume">Resume</Link>
                 </li>
             </ul>
-          </div> 
+          
+          <button className='menu' onClick={()=>setIsMobile(!isMobile)}>
+            {isMobile? "" : <FaBars />}
+          </button>
       </nav>
     </>
   )

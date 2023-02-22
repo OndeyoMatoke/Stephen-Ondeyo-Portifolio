@@ -3,8 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div>
-      <p className='aboutPara'>Hi there! I'm a creative frontend web developer who loves to create 
-      amazing things. I have a passion for building beautiful websites that are responsive and engaging.
+      <p className='aboutPara'>I'm a creative frontend web developer with passion for building beautiful websites that are responsive and engaging.
 <br/>
 <br/>
 I love learning new things, whether it's in my spare time or at work. I'm constantly learning new technologies as 
