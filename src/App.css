@@ -168,6 +168,12 @@ body {
   text-decoration: none;
 }
 
+.mathCalciimage {
+  width: 50%;
+  border-radius: 5px;
+  height: 100%;
+}
+
 .giftcardimage {
   width: 50%;
   border-radius: 5px;

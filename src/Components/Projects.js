@@ -3,6 +3,18 @@ import React from 'react'
 export default function Projects() {
   return (
     <div className='projects'>
+
+
+    <div className='project'>   
+        <a href='https://math-calculator-gnzv.vercel.app/' target='blank'>
+          <div>
+            <img src='/images/mathCalci.png' alt='mathCalci' className='mathCalciimage'/>
+            <p className='heading5'> Making math calculations easy</p>
+          </div>
+        </a>
+      </div>
+
+
       <div className='project'>
         <a href='https://gift-card-delta.vercel.app/' target='blank'>
           <div>
