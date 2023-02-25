@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa'
 
 export default function Navbar() {
 
-  const [isMobile, setIsMobile] = useState(false)
+  const [small, setSmall] = useState(false)
 
   return (
     <>      
@@ -14,8 +14,8 @@ export default function Navbar() {
 
         <img className='logo' width='20px' src='https://www.yiiframework.com/image/design/logo/yii3_sign.png' alt='logo'></img>
 
-            <ul className={isMobile? 'navLstMobile': 'navLst'}
-              onClick={()=> setIsMobile(false)}
+            <ul className={small? 'navLstMobile': 'navLst'}
+              onClick={()=> setSmall(false)}
             >
                 <li>
                     <Link to="/">Home</Link>
@@ -38,8 +38,8 @@ export default function Navbar() {
                 </li>
             </ul>
           
-          <button className='menu' onClick={()=>setIsMobile(!isMobile)}>
-            {isMobile? ("") : (<FaBars />)}
+          <button className='menu' onClick={()=>setSmall(!small)}>
+            {small? ("") : (<FaBars />)}
           </button>
       </nav>
     </>
