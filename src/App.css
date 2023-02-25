@@ -76,7 +76,7 @@ body {
   }
 
   .navLstMobile :hover {
-    opacity: .9;
+    opacity: .7;
     width: 70%;
   }
 
@@ -134,6 +134,15 @@ body {
   .navLst {
     display: none;
   }   
+
+  .myForm label input {
+    width: 250px;
+  }
+
+  .myForm label textarea {
+    width: 250px;
+    height: 100px;
+  }
    
   }
 
@@ -193,6 +202,7 @@ body {
   border: none;
   width: 20%;
   background-color: azure;
+  height: 100px;
 }
 
 .sabmit {

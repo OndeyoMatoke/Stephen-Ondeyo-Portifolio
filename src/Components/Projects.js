@@ -9,7 +9,7 @@ export default function Projects() {
         <a href='https://math-calculator-gnzv-git-master-ondeyomatoke.vercel.app/'>
           <div>
             <img src='/images/mathCalci.png' alt='mathCalci' className='mathCalciimage'/>
-            <p className='heading5'> Making math calculations easy</p>
+            <p className='heading5'> Facilitating math calculations</p>
           </div>
         </a>
       </div>
