@@ -54,12 +54,42 @@ body {
 
  @media screen and (max-width: 600px) {
 
+  .navLstMobile {
+    position: absolute;
+    top: 30px;
+    background-color: rgb(85, 82, 82);
+    width: 45%;
+    right: 0;
+    border-radius: 5px;
+  }
+
+  .navLstMobile li {
+    display: flex;    
+    padding: 10px;   
+    margin: 0; 
+  }
+
+  .navLstMobile li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navLstMobile :hover {
+    opacity: 0.8;
+    width: 70%;
+  }
+
   .menu {
     display: flex;
     position: absolute;
     right: 10px;
     top: 20px;
     cursor: pointer;
+  }
+
+  .navBar {
+    background-color: black;
+    height: 60px;
   }
 
   .logo {
@@ -102,37 +132,8 @@ body {
 
   .navLst {
     display: none;
-  }
-
-  
-
-
-  /* 
-   .navBar {
-     flex-direction: column;
-     align-items: flex-start;
-     background-color: black;     
-   } 
- 
-   .navLstMobile {
-     position:absolute;
-     display: block;
-     list-style: none;
-     background-color: blue;
-     left: 0;
-     top: 75px;
-     transition: all 0.5s;
-     width: 100%;    
-     
-   }
- 
-   .navLst li a {
-     color: aliceblue;
-     padding: 30px;
-     width: 100%;
-     text-align: center;
-     transition: all 0.3s ease;
-   } */
+  }   
+   
   }
 
 

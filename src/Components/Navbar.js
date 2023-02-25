@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa'
 
 export default function Navbar() {
 
-  const {isMobile, setIsMobile} = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   return (
     <>      
