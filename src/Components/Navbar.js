@@ -12,7 +12,7 @@ export default function Navbar() {
     <>      
       <nav className='navBar'>
 
-        <img className='logo' width='20px' src='https://www.yiiframework.com/image/design/logo/yii3_sign.png' alt='logo'></img>
+        <img className='logo' width='35px' src='https://www.dhresource.com/0x0s/f2-albu-g10-M00-A1-40-rBVaVlwPMKmAUWbKAALis07S17Q786.jpg/tiger-sticker-horror-face-animal-car-car.jpg' alt='logo'></img>
 
             <ul className={small? 'navLstMobile': 'navLst'}
               onClick={()=> setSmall(false)}

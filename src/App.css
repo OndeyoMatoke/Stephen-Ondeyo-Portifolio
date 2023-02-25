@@ -49,6 +49,7 @@ body {
 .logo {
   position: absolute;
   left: 10px;
+  border-radius: 50%;
 }
 
 
@@ -95,8 +96,8 @@ body {
   .logo {
     display: flex;
     position: absolute;
-    top: 20px;
     left: 10px;
+    border-radius: 50%;
   }
 
   .myHome {
