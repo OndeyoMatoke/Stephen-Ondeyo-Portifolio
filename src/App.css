@@ -46,27 +46,73 @@ body {
   
 } 
 
+.logo {
+  position: absolute;
+  left: 10px;
+}
 
 
+ @media screen and (max-width: 600px) {
 
-@media screen and (max-width: 600px) {
   .menu {
-     display: block;
-     cursor: pointer;
-     position: absolute;
-     right: 10px;
-     top: 20px;
-   } 
- 
-   .navLst {
-     display: none;       
-   }
- 
-   /* .navBar {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .myHome {
+    text-align: left;
+  }  
+
+  .aboutHeading2 {
+    margin-left: 50px;
+    margin-top: 0px;    
+  }
+
+  .aboutPara {
+    width: 80%;
+    position: absolute;
+    top: 25px;
+  }
+
+  .skillset {
+    left: 50px;
+    position: absolute;
+    bottom: 200px;
+  }
+
+  .skillList {
+    left: 50px;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .myResume {
+    width: 100%;
+  }
+
+  .navLst {
+    display: none;
+  }
+
+  
+
+
+  /* 
+   .navBar {
      flex-direction: column;
      align-items: flex-start;
      background-color: black;     
-   } */
+   } 
  
    .navLstMobile {
      position:absolute;
@@ -81,25 +127,37 @@ body {
    }
  
    .navLst li a {
-     padding: 5px 1px;
+     color: aliceblue;
+     padding: 30px;
      width: 100%;
-   }
+     text-align: center;
+     transition: all 0.3s ease;
+   } */
   }
 
 
 
 .homeHeading {
-  margin-top: 200px;
-  margin-left: 200px;
+  position: absolute;
+  top: 200px;
+  left: 60px;
 }
 
 .homePara {  
-  margin-left: 200px;  
-  letter-spacing: 1px;
+  position: absolute;
+  bottom: 250px;
+  left: 60px;
 }
+
+.aboutHeading2 {
+  position: absolute;
+  left: 30%;
+  top: 90px;
+}
+
 .aboutPara {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 400px;
 }
 

@@ -12,6 +12,8 @@ export default function Navbar() {
     <>      
       <nav className='navBar'>
 
+        <img className='logo' width='20px' src='https://www.yiiframework.com/image/design/logo/yii3_sign.png' alt='logo'></img>
+
             <ul className={isMobile? 'navLstMobile': 'navLst'}
               onClick={()=> setIsMobile(false)}
             >
@@ -37,7 +39,7 @@ export default function Navbar() {
             </ul>
           
           <button className='menu' onClick={()=>setIsMobile(!isMobile)}>
-            {isMobile? "" : <FaBars />}
+            {isMobile? ("") : (<FaBars />)}
           </button>
       </nav>
     </>

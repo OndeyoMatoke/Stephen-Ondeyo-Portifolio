@@ -3,6 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div>
+      <h2 className='aboutHeading2'>About Me</h2>
       <p className='aboutPara'>I'm a creative frontend web developer with passion for building beautiful websites that are responsive and engaging.
 <br/>
 <br/>
@@ -15,12 +16,14 @@ In my free time I enjoy listening to music & comics, reading books and watching 
       <br/>
       <br/>
 
-      <i><b><p className='skillset'>Skills</p></b></i>
+      <i><b><p className='skillset'>~Skills~</p></b></i>
       
       <ul className='skillList'>
         <li>
-            JavaScript <br/>
             React.js <br/>
+            JavaScript <br/>
+            ant design <br/>
+            SASS <br/>            
             CSS <br/>
             HTML <br/>
             Git
