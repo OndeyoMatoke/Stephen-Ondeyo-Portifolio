@@ -39,7 +39,7 @@ export default function Navbar() {
             </ul>
           
           <button className='menu' onClick={()=>setSmall(!small)}>
-            {small? ("") : (<FaBars />)}
+            {small? ("") : (<FaBars/>)}
           </button>
       </nav>
     </>
