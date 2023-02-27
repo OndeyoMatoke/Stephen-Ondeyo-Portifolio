@@ -53,7 +53,7 @@ body {
 }
 
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   .navLstMobile {
     position: absolute;
@@ -62,25 +62,45 @@ body {
     width: 45%;
     right: 0;
     border-radius: 5px;
-  }
+  } 
 
-  .navLstMobile li {
-    display: flex;    
-    padding: 5px;   
-    margin: 0; 
-  }
-
-  .navLstMobile li a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .navLstMobile :hover {
+  /* .navLstMobile :hover {
     opacity: .7;
     width: 70%;
+  } */      
   }
 
-  .menu {
+  @media screen and (max-width:600px) {
+    .navLstMobile li {
+      display: flex;    
+      padding: 10px;   
+      margin: 0; 
+    }
+  }
+
+   @media screen and (max-width:600px) {
+    .navLstMobile li a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+   @media screen and (max-width:600px) {
+    .navBar {
+      background-color: black;
+      height: 60px;
+    } 
+  }
+
+  @media screen and (max-width:600px) {
+    .navLst {
+      display: none;
+    }
+  }
+
+
+  @media  screen and (max-width:600px) { 
+    .menu {
     display: flex;
     position: absolute;
     right: 10px;
@@ -88,35 +108,30 @@ body {
     cursor: pointer;
     
   }
-
-  .navBar {
-    background-color: black;
-    height: 60px;
   }
 
-  .logo {
-    display: flex;
-    position: absolute;
-    left: 10px;
-    border-radius: 50%;
-  }
-
-  .myHome {
-    text-align: left;
-  }  
-
-  .aboutHeading2 {
+  @media screen and (max-width:600px) {
+    .aboutHeading2 {
     margin-left: 50px;
     margin-top: 0px;    
   }
-
-  .aboutPara {
-    width: 80%;
-    position: absolute;
-    top: 25px;
+    
   }
 
-  .skillset {
+   @media screen and (max-width:600px) {
+    .myForm label input {
+    width: 250px;
+  }
+
+  .myForm label textarea {
+    width: 250px;
+    height: 100px;
+  } 
+    
+  }
+
+   @media screen and (max-width:600px) {
+    .skillset {
     left: 50px;
     position: absolute;
     bottom: 200px;
@@ -126,27 +141,23 @@ body {
     left: 50px;
     position: absolute;
     bottom: 50px;
+  }    
   }
 
-  .myResume {
-    width: 100%;
+   @media screen and (max-width:600px) {
+    .aboutPara {
+      width: 80%;
+      position: absolute;
+      top: 25px;
+    }    
   }
 
-  .navLst {
-    display: none;
-  }   
-
-  .myForm label input {
-    width: 250px;
+   @media screen and (max-width:600px) {
+    .myResume {
+      width: 100%;
+    }
+    
   }
-
-  .myForm label textarea {
-    width: 250px;
-    height: 100px;
-  }
-   
-  }
-
 
 
 .homeHeading {
