@@ -153,9 +153,13 @@ body {
   }
 
    @media screen and (max-width:600px) {
-    .myResume {
+    .resuma {
       width: 100%;
     }
+    
+  }
+
+  @media screen and (max-width:600px){
     
   }
 
@@ -196,8 +200,8 @@ body {
 
 
 .myForm {
-  margin-left: 100px;
-  margin-top: 50px;
+  margin-left: 20%;
+  margin-top: 50px; 
   
 }
 
@@ -295,6 +299,8 @@ body {
 
 /* styling resume */
 .myResume {
-  background-color: rgb(248, 243, 243);
+  
+  display: flex;
+  justify-content: center;
   
 }
