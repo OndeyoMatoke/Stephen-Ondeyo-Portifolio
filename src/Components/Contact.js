@@ -5,25 +5,20 @@ import React, { useState } from 'react'
 
 export default function Contact() {
 
-  const [inputs, setInputs] = useState({
-    name: '',
-    subject: '',
-    email: '',
-    message: ''
-  })
+  const [name, setName] = useState('')
+  const [subject, setSubject] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')  
+  
 
   const onSubmit = (event)=>{
     event.preventDefault()
-  }
-    
-  
 
-  const handleChange = (event)=>{
-      setInputs({
-        ...inputs,
-        [event.target.name]: event.target.value
-      });
-    } 
+    if (name&&subject&&email&&message) {
+      console.log("name:", name, "\nsubject:", subject, "\nemail:", email, "\nmessage:", message)
+    }
+    
+  }
   
   
 
@@ -35,9 +30,8 @@ export default function Contact() {
       <label>Name: <br/>
         <input
            type="text"
-           name="name"
-           value={inputs.name}
-           onChange={handleChange}          
+           name="name"           
+           onChange={e=>setName(e.target.value)}          
           required
         />
       </label>
@@ -46,9 +40,8 @@ export default function Contact() {
       <label>Subject: <br/>
         <input
            type="text"
-           name="subject"
-           value={inputs.subject}
-           onChange={handleChange}
+           name="subject"           
+           onChange={e=>setSubject(e.target.value)}
           required
         />
       </label>
@@ -58,8 +51,7 @@ export default function Contact() {
         <input
            type="text"
            name="email"
-           value={inputs.email}
-           onChange={handleChange}
+           onChange={e=>setEmail(e.target.value)}
           required
         />
       </label>
@@ -69,8 +61,7 @@ export default function Contact() {
         <textarea
            type="text"
            name="message"
-           value={inputs.message}
-          onChange={handleChange}
+          onChange={e=>setMessage(e.target.value)}
           required
         />
       </label>
