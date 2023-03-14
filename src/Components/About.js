@@ -7,7 +7,7 @@ export default function About() {
       <p className='aboutPara'>I'm a creative frontend web developer with passion for building beautiful websites that are responsive and engaging.
 <br/>
 <br/>
-I love learning new things. I'm constantly learning new technologies as 
+I love learning and I'm constantly learning new technologies as 
 they emerge, so you can rest assured that I will be able to keep up with the rapid pace of change in this industry.
 <br/>
 <br/>
